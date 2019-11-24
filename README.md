@@ -63,9 +63,9 @@ Create a file `memscrimper-config.json`, and create JSON stanzas similar to the 
 # Notes
 
 Address spaces are loaded as layers.  Generally, volatility was intended to analyze
-one file, so there is no real support for loading (multiple) files for analysis.
+one file, so there is no real support for loading (multiple) files for analysis via the CLI.
 The easiest way for me to load the diff and reference files was to create a configuration
-file and then load files in the layers when the layers were being loaded.
+file and then load files in the layers when the layers were being loaded based on the configuration.
 
 The `MemscrimperLayer` takes the information in the configuration file, and
 loads the diff and reference files.  This layer overloads the read functions
